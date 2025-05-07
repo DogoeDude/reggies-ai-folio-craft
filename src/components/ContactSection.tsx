@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Github, Phone } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -47,6 +47,12 @@ const ContactSection = () => {
               if you think we might be a good fit for each other.
             </p>
             
+            <p className="text-muted-foreground mt-2">
+              If you appreciate my performance during the OJT period and there might be 
+              potential employment opportunities afterward, I would be very interested 
+              in discussing those possibilities with you.
+            </p>
+            
             <div className="space-y-4 mt-8">
               <div className="flex items-center gap-4">
                 <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
@@ -54,8 +60,20 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="font-medium">Email</p>
-                  <a href="mailto:reggie.hermosisima@email.com" className="text-muted-foreground hover:text-primary">
-                    reggie.hermosisima@email.com
+                  <a href="mailto:reggiehermosisima@gmail.com" className="text-muted-foreground hover:text-primary">
+                    reggiehermosisima@gmail.com
+                  </a>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-4">
+                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Phone className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-medium">Phone</p>
+                  <a href="tel:+639763111575" className="text-muted-foreground hover:text-primary">
+                    09763111575
                   </a>
                 </div>
               </div>
@@ -66,7 +84,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="font-medium">LinkedIn</p>
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
+                  <a href="https://www.linkedin.com/in/reggie-hermosisima-0937a8275/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
                     linkedin.com/in/reggie-hermosisima
                   </a>
                 </div>
@@ -78,8 +96,8 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="font-medium">GitHub</p>
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
-                    github.com/reggieH
+                  <a href="https://github.com/DogoeDude" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
+                    github.com/DogoeDude
                   </a>
                 </div>
               </div>
