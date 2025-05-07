@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Github, Award, Trophy, FileCode } from "lucide-react";
+import { Github, Award, Trophy, FileCode, Brain } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const ExperienceSection = () => {
@@ -54,8 +54,8 @@ const ExperienceSection = () => {
       icon: <FileCode className="h-5 w-5 text-primary" />
     },
     {
-      title: "DevCon Member",
-      description: "Active participant in developer community",
+      title: "DevCon",
+      description: "Participated in developer community activities",
       icon: <FileCode className="h-5 w-5 text-primary" />
     },
     {
@@ -71,6 +71,63 @@ const ExperienceSection = () => {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold mb-2">Experience</h2>
           <div className="h-1 w-20 bg-primary mx-auto mb-10 md:mx-0"></div>
+          
+          {/* AI Approach Section */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold mb-6 text-center md:text-left">My Approach</h3>
+            <Card className="mb-8 hover:shadow-md transition-all">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <Brain className="h-6 w-6 text-primary" />
+                  <h4 className="font-medium text-lg">AI-Powered Development</h4>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  I leverage AI tools to enhance my development workflow and productivity. Rather than adhering strictly to traditional
+                  approaches, I embrace technological advancements that allow me to work smarter and deliver results faster.
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
+                  <Card className="bg-muted/50">
+                    <CardContent className="p-4">
+                      <h5 className="font-medium mb-2">Benefits</h5>
+                      <ul className="space-y-1 text-sm">
+                        <li className="flex items-center gap-2">
+                          <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                          <span>Accelerated development cycles</span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                          <span>Focus on complex problem-solving</span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                          <span>Enhanced code quality</span>
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                  <Card className="bg-muted/50">
+                    <CardContent className="p-4">
+                      <h5 className="font-medium mb-2">Tools Used</h5>
+                      <ul className="space-y-1 text-sm">
+                        <li className="flex items-center gap-2">
+                          <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                          <span>GitHub Copilot</span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                          <span>Cursor Editor</span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                          <span>ChatGPT & Claude</span>
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
           
           {/* Achievements Section */}
           <div className="mb-12">
