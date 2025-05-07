@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/reggies-ai-folio-craft/',
+  base: mode === 'production' ? '/reggies-ai-folio-craft/' : '/',
   server: {
     host: "::",
     port: 8080,
