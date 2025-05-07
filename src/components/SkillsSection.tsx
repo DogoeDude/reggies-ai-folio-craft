@@ -51,7 +51,7 @@ const SkillsSection = () => {
     {
       title: "AI & Machine Learning",
       icon: <Brain className="h-5 w-5 text-primary" />,
-      skills: ["Prompt Engineering", "ChatGPT", "Deepseek", "Claude", "Machine Learning Basics"],
+      skills: ["Prompt Engineering", "ChatGPT", "Deepseek", "Claude", "Machine Learning Basics", "AI Research Tools"],
     },
     {
       title: "Tools & Practices",
@@ -59,9 +59,9 @@ const SkillsSection = () => {
       skills: ["Git/GitHub", "VS Code", "Cursor", "IntelliJ", "Agile Methodology"],
     },
     {
-      title: "Network & Integration",
-      icon: <Network className="h-5 w-5 text-primary" />,
-      skills: ["API Integration", "Networking Basics", "GitHub Copilot", "AI-assisted Development"],
+      title: "AI-Enhanced Development",
+      icon: <Brain className="h-5 w-5 text-primary" />,
+      skills: ["GitHub Copilot", "Cursor AI", "Code Generation", "Research Automation", "AI Code Review"],
     },
   ];
 

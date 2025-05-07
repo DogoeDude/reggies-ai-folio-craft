@@ -121,9 +121,25 @@ const ExperienceSection = () => {
                           <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
                           <span>ChatGPT & Claude</span>
                         </li>
+                        <li className="flex items-center gap-2">
+                          <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                          <span>Deepseek AI</span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                          <span>Research Assistants</span>
+                        </li>
                       </ul>
                     </CardContent>
                   </Card>
+                </div>
+                <div className="mt-4 bg-primary/10 p-4 rounded-md">
+                  <p className="text-sm">
+                    <strong>My Philosophy:</strong> AI tools are designed to make development and research more efficient. 
+                    I embrace these technologies not as replacements for skill, but as amplifiers that allow me to focus on higher-level 
+                    problem solving and creative work. By leveraging the latest AI advancements, I can deliver better results more quickly 
+                    while continuously expanding my technical capabilities.
+                  </p>
                 </div>
               </CardContent>
             </Card>
