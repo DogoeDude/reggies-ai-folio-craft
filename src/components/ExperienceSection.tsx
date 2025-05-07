@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Github, Award, Trophy, FileCode, Brain } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -188,9 +187,9 @@ const ExperienceSection = () => {
           </div>
           
           {/* GitHub Profile */}
-          <div className="text-center md:text-left">
-            <div className="p-6 bg-white rounded-lg shadow-sm border max-w-3xl mx-auto md:mx-0">
-              <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 justify-center md:justify-start">
+          <div className="text-center">
+            <div className="p-6 bg-white rounded-lg shadow-sm border max-w-3xl mx-auto">
+              <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 justify-center">
                 <Github className="h-5 w-5 text-primary" />
                 GitHub Profile
               </h3>
