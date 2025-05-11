@@ -29,6 +29,11 @@ const ExperienceSection = () => {
       description: "An AI-powered visual note-taking application.",
       link: "https://github.com/Illamapalooza/visualnote-ai"
     },
+    {
+      name: "Pet Mood Tracker",
+      description: "A mobile Appplication used to track the Mood, Hunger and health of a Pet.",
+      link: "https://github.com/DogoeDude/pet-pals-mood-tracker"
+    },
   ];
 
   const achievements = [
