@@ -11,16 +11,16 @@ type SkillCategoryProps = {
 
 const SkillCategory = ({ title, skills, icon, className }: SkillCategoryProps) => {
   return (
-    <Card className={cn("h-full transition-all hover:shadow-md", className)}>
+    <Card className={cn("h-full bg-white/[0.02] border-white/10 hover:bg-white/[0.04] hover:border-primary/50 transition-all duration-500 backdrop-blur-sm", className)}>
       <CardContent className="pt-6">
         <div className="flex items-center gap-3 mb-4">
           {icon}
-          <h3 className="font-semibold text-lg">{title}</h3>
+          <h3 className="font-bold text-xl">{title}</h3>
         </div>
-        <ul className="space-y-2">
+        <ul className="space-y-3 text-base">
           {skills.map((skill) => (
-            <li key={skill} className="flex items-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+            <li key={skill} className="flex items-center gap-3">
+              <span className="h-2 w-2 rounded-full bg-primary"></span>
               <span>{skill}</span>
             </li>
           ))}
@@ -35,32 +35,32 @@ const SkillsSection = () => {
     {
       title: "Programming",
       icon: <Code className="h-5 w-5 text-primary" />,
-      skills: ["Python", "C++", "Java", "JavaScript/TypeScript"],
+      skills: ["Python", "C++", "JavaScript/TypeScript"],
     },
     {
       title: "Web Development",
       icon: <Globe className="h-5 w-5 text-primary" />,
-      skills: ["React", "HTML/CSS", "Responsive Design", "API Integration"],
+      skills: ["React", "HTML/CSS", "ShadCN", "API Integration"],
     },
     {
       title: "Database & Analysis",
       icon: <Database className="h-5 w-5 text-primary" />,
-      skills: ["MySQL", "Supabase", "Database Design", "SQL Queries", "Data Analysis and Interpretation"],
+      skills: ["MySQL", "Supabase", "Database Design", "Data Analysis"],
     },
     {
       title: "AI & Machine Learning",
       icon: <Brain className="h-5 w-5 text-primary" />,
-      skills: ["Prompt Engineering", "ChatGPT", "Deepseek", "Claude", "Machine Learning Basics", "AI Research Tools"],
+      skills: ["Deepseek", "Claude", "Machine Learning Basics", "AI Research Tools"],
     },
     {
       title: "Tools & Practices",
       icon: <Github className="h-5 w-5 text-primary" />,
-      skills: ["Git/GitHub", "VS Code", "Cursor", "IntelliJ", "Agile Methodology"],
+      skills: ["Git/GitHub", "VS Code", "Cursor", "IntelliJ"],
     },
     {
       title: "AI-Enhanced Development",
       icon: <Brain className="h-5 w-5 text-primary" />,
-      skills: ["GitHub Copilot", "Cursor AI", "Code Generation", "Research Automation", "AI Code Review"],
+      skills: ["GitHub Copilot", "Cursor AI", "Research Automation", "AI Code Review"],
     },
   ];
 
@@ -83,39 +83,47 @@ const SkillsSection = () => {
   ];
 
   return (
-    <section id="skills" className="section-padding py-20">
-      <div className="max-w-6xl mx-auto">
-        {/* Technical Skills Section */}
-        <div className="mb-20">
-          <h2 className="text-3xl font-bold mb-2">Technical Skills</h2>
-          <div className="h-1 w-20 bg-primary mb-10"></div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {technicalSkills.map((category, index) => (
-              <SkillCategory
-                key={index}
-                title={category.title}
-                skills={category.skills}
-                icon={category.icon}
-              />
-            ))}
-          </div>
-        </div>
+    <section id="skills" className="py-24 relative overflow-hidden">
+      {/* Decorative Background Elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute inset-0 bg-[radial-gradient(#ffffff15_1px,transparent_1px)] [background-size:20px_20px] opacity-60"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent opacity-30"></div>
+      </div>
 
-        {/* Soft Skills Section */}
-        <div>
-          <h2 className="text-3xl font-bold mb-2">Soft Skills</h2>
-          <div className="h-1 w-20 bg-primary mb-10"></div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {softSkills.map((category, index) => (
-              <SkillCategory
-                key={index}
-                title={category.title}
-                skills={category.skills}
-                icon={category.icon}
-              />
-            ))}
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-7xl mx-auto">
+          {/* Technical Skills Section */}
+          <div className="mb-24">
+            <h2 className="text-4xl font-bold mb-3">Technical Skills</h2>
+            <div className="h-1 w-20 bg-primary mb-10"></div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {technicalSkills.map((category, index) => (
+                <SkillCategory
+                  key={index}
+                  title={category.title}
+                  skills={category.skills}
+                  icon={category.icon}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Soft Skills Section */}
+          <div>
+            <h2 className="text-4xl font-bold mb-3">Soft Skills</h2>
+            <div className="h-1 w-20 bg-primary mb-10"></div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {softSkills.map((category, index) => (
+                <SkillCategory
+                  key={index}
+                  title={category.title}
+                  skills={category.skills}
+                  icon={category.icon}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

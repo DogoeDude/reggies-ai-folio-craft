@@ -31,7 +31,7 @@ const Navbar = () => {
     <nav 
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300 py-4",
-        isScrolled ? "bg-white/90 backdrop-blur-sm shadow-sm" : "bg-transparent"
+        isScrolled ? "bg-background/90 backdrop-blur-sm shadow-sm border-b" : "bg-transparent"
       )}
     >
       <div className="container flex justify-between items-center">
@@ -44,7 +44,7 @@ const Navbar = () => {
             <a
               key={item.name}
               href={item.href}
-              className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary transition-colors"
+              className="px-3 py-2 rounded-md text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
             >
               {item.name}
             </a>
